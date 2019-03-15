@@ -1,0 +1,7 @@
+1. Cat vs Dog
+
+2. Bike , Car and horse
+
+3. Face Detection
+
+4. Image Recognisation

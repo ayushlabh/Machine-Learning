@@ -1,0 +1,67 @@
+Top Deep Learning libraries :
+
+1. Keras  (https://faroit.github.io/keras-docs/2.0.2/models/about-keras-models/)
+
+	Models :
+
+		i) Sequential
+
+	Layers :
+
+
+
+2. Tensorflow
+
+	- tensorboard
+
+3. Pytorch
+
+
+
+
+
+Top Neural Networks :
+
+1. Convolutional Neural Network (CNN) - Selecting filters of some size (eg 3x3) and convolving(sliding) different filters over the image individualy to get a
+									    stack of filtered images. Convolution layer is then followed by ReLU layer and pooling layer .
+
+2. Recurrent Neural Network (RNN) - It is used for continues input , sequence recognisation and forecasting. One of the inputs fed to the layer of RNN is its 
+								    output only .It also used memory like LSTM (Long Short Term Memory)
+
+3. Restricted Boltzmann Machines (RBM) - 2 layers visible(input) and hidden layer.First random weights and biases are assigned.Then backpropogated from hidded
+                                        to visible layer to calculate the difference and hence wights and bias are calculated.Probabilistic approach is used.   
+
+4. Deep Belied Nets (DBN) - It has a structure similar to Multilayer perceptron(MLP) network and works as many RBMs are stacked over one other and hidden layer 
+                            of first works as visible layer of second RBM .
+
+5. Autoencoders
+
+6. Recursive Neural Tensor Network (RNTN) - 
+
+
+
+
+--------------------------
+  Application vs Models
+--------------------------
+
+1. Unlabelled(Unsupervised Learning , Feature Extraction , Pattern Recognition)
+	- RBM and Autoencoders
+
+2. Text Processing(Sentiment Analysis)
+	- RNN and RNTN
+
+3. Image Recognition(Cat vs Dog) 
+	-  DBN and CNN
+
+4. Object Detection (self driving car)
+	- CNN and RNTN
+
+5. Speech Recognition 
+	- RNN
+
+6. General Classification 
+	- DBN
+
+7. Time Series Analysis
+	- RNN

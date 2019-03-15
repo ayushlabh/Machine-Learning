@@ -1,0 +1,6 @@
+# Brief description and size of each dataset : 
+
+1. Titanic
+2. Iris
+3. Adult
+4. Spam messages      // "latin-1" encoding

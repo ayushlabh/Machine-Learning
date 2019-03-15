@@ -1,0 +1,122 @@
+1. Feature preprocessing , Feature generation
+
+	- i) Types of features
+
+	      i) Numerical   (eg. fare)
+	      ii)categorical (eg. gender)
+	      iii)Text       (eg. name)
+	      iv) Ordinal - Like categorical but with order of superiority (e.g. condition - old, medium, new)
+	      
+
+
+	- Preprocessing :
+
+	i) Feature Scaling   -   Tree based models don't depend on scaling
+							 Non tree based models depends largely on scaling
+
+	ii) Outliers
+
+	iii) Rank
+
+	iv) One Hot Encoding - Converting categorical data in Linear models
+
+	v) Sparse Matrix - For storing categorical value with lot of zero values
+
+	vi) datetime and coordinate(in map) features
+
+
+2. Handling missing values
+
+	i) numbers like -1,-999    - for tree based models
+
+	ii) Mean, median - for linear models
+
+	iii) reconstructing values
+
+
+
+3. Image / Text data
+
+
+	i) Text : i) Bag of words (count of each words)
+
+	          ii) n-gram (considering n words together)
+
+	          iii) Stemming - Democracy , democratic , democratization   -->  democra
+
+	          iv) Lemmatization - Democracy , democratic , democratization --> democracy
+
+	          v) Stopwords - That does not carry enough information e.g. prepositions and articles
+
+	
+	ii) Image : i) Fine turning
+
+				ii) Augmentation
+
+
+4. Exploratory Data Analysis :
+
+	i) To understand data better
+
+	ii) Build intuition about the data
+
+	iii) Generate Hypothesis
+
+	iv) Find insights
+
+
+5. Building intuiting about data :
+
+	i) Domain knowledge
+
+	ii) How data is generated
+
+
+6. Visualisation :
+
+	i) Individual feature :
+
+		- Histogram
+
+	ii) Feature relation :
+
+		- Scatter plot
+
+		- Heatmap
+
+
+7. Data in competitions :
+
+	i) Train data - with output column or label
+
+		- Divide in 2 parts :
+
+		 i) Training part - for training our model
+
+		 ii) Validation - for validating our trained model on unseen data
+
+	ii) Test data - without output column or label
+
+		- Predict the values and submit the prediction 
+
+
+
+8. Validataion :
+
+	i) Holdout - When data is simply divided into train and validation part
+
+	             Good with datasets having large amount of data (more rows)
+
+	ii) K fold - Using a part of data as validation part and other as train data and continuously repeating the process k times with different part as validation
+
+				Good with datasets having small no. of rows
+
+
+
+9. Splittig techniques :
+
+	i) Random split
+
+	ii) Timewise split
+
+	iii) By id

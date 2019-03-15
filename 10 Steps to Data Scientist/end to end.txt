@@ -1,0 +1,12 @@
+1. Training a model 
+	- using the data that you have train your model with any machine learning or deep learning model that has the best efficiency
+
+2. Testing the model 
+	- Testing the selected model to get the accuracy and other measurables
+
+3. Saving the model
+	- So the it could be used practically
+
+4. Giving your own inputs to predict outputs and see the real problem being solved
+
+5. Make an app or webapp with the model

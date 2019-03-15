@@ -1,0 +1,26 @@
+Top Machine Learning Models :
+
+------------------
+	Regression
+------------------
+
+1. Linear Regression 
+
+2. 
+
+
+
+
+
+
+-----------------------
+	Classification
+-----------------------
+
+1. Decision Tree
+
+2. K Nearest Neighbors
+
+3. Logistic Regression
+
+4. Support Vector Machine

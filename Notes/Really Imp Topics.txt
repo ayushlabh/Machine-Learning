@@ -1,0 +1,23 @@
+Data Science is a 3 step process:
+
+1. Cleaning data -->  2. Choosing and tuning algorithm --> 3. Visualising data
+
+
+Types of Machine Learning
+
+1. Superivsed Learning
+2. Unsupervised Learning
+3. Reinforcement Learning
+
+
+Famous terms
+
+1. Clustering
+2. Linear Regression
+3. Logistic Regression
+4. Regularization
+5. Neural Networks
+6. Support Vector Machine
+7. Dimensionality Reduction
+8. Anamoly Detection
+9. Recommender System

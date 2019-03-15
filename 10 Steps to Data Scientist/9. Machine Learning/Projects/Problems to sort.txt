@@ -1,0 +1,24 @@
+------------------------
+	Types of Problem
+------------------------
+
+1. Linear Regression
+
+2. Classification
+
+
+----------------
+	Problems 
+----------------
+
+1. Titanic
+
+2. Iris
+
+3. House Price Prediction
+
+4. Stock Market
+
+5. Financial Problem
+
+6. Time series

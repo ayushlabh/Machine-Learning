@@ -1,0 +1,15 @@
+Step 1 -->  Make the problem statement and analyze the problem
+
+Step 2 --> Get the data
+
+Step 3 --> Process the data and make it fit for use
+
+Step 4 --> Design/implement an efficient machine learning model
+
+Step 5 --> Train tthe model with data
+
+Step 6 --> Produce visualisation of result
+
+Step 7 --> produce result or verify with test data
+
+

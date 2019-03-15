@@ -1,0 +1,31 @@
+
+---------------------
+	Steps Involved
+---------------------
+
+1. Problem Statement and analysis
+
+2. Exploratory Data Analysis (EDA)
+
+3. Visualisation to support EDA
+
+4. Handling missing values
+
+5. Preprocessing (e.g. scaling) 
+
+6. Selecting and training model
+
+7. Predicting result/Calculating Accuracy
+
+8. Deploying on flask/Django
+
+
+
+
+-----------------------
+	Steps Explained
+-----------------------
+
+
+
+

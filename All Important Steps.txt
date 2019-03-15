@@ -1,0 +1,28 @@
+1. Importing data
+
+2. Understaning dataset
+
+3. Visualisation
+
+4. Missing data handling
+
+5. Changling categorical data to encoding
+
+6. Test for statistical assumption
+
+	i) Normality  - For skewed variables , probability curve will not be straight.
+					Log transformation of the column will solve the problem
+
+	ii) Homoscedasticity
+	iii)Linearity
+	iv) Absence of correlated errors
+
+6. 
+
+
+
+
+
+	- Stacking
+	- Ensemble
+	- XGBoost

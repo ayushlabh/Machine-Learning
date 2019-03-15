@@ -1,0 +1,15 @@
+1. House price prediction
+
+2. Image classification with CNN
+
+3. Autoencoder for Image Denoising
+
+4. RNN for Machine Translation ,Stock price prediction
+
+5. Convolutional GAN for Image Generation
+
+6. Learn Flappy bird (Q deep Learning)
+
+7. GAN
+
+8. Time series

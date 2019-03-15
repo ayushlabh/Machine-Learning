@@ -1,0 +1,47 @@
+1. Data Wrangling , Data Mining and Data Warehousing
+
+   Wrangling : Cleaning data to prepare it for analysis
+   Warehousing : Storing data from multiple sources into a Warehouse
+   Mining : Processing warehouse data to get insight
+
+2. Deterministic model vs Probablistic(Stochastic) model
+   
+   Deterministic : When all the inputs are known and outcome is going to be same everytime
+   Stochastic : When some of the inputs are not known with certainty and outcome is not fixed
+
+2. Skewness and Kurtosis
+
+	- Skewness : Measure of symmetry of a data distribution(histogram).
+	             Perfectly symmetric data has 0 skewness
+	             Right tailed data has positive and left tailed data has negative skewness .
+
+	- Kurtosis : It measures how pointy a data distribution is.
+				 Very pointed data distribution gives high positive kurtosis
+				 Flat data distribution gives high negative kurtosis
+				 A moderate curved data distribution gives 0 kurtosis
+
+
+
+3. Bias vs Variance trade-off :
+
+	Bias - It's the error that we get while training our train data . Linear(simple) models have more error i.e. more bias while complex models has less bias .
+
+	Variance - As the train and test data is not same. A model that is giving very less error in train data must be overfit and give more error in test data . 
+	           And that is said to be more variance for a model. Variance is the variation in results of training and test data .
+
+	-  More complex model has low bias but high variance because of some amount of overfitting . And the opposite is true for simple models
+
+
+4. Normalisation and Regularisation
+
+5. Dimensionality Reduction - We can imagine data in just 1,2 or 3 dimension . The process of reducing the dimension of the e.g reducing data of 5 columns to just 1d or 2d.
+							  Principal Component Analysis(PCA) is one of the way to implement Dimensionality Reduction .
+
+6. Collaborative Filtering
+
+7. One hot encoding - Where string or integer no. of output label is converted to vector . eg. output label "7" of MNIST data is [0 0 0 0 0 0 0 1 0 0]
+
+8. Word2Vec
+
+9. Bagging and Boosting
+

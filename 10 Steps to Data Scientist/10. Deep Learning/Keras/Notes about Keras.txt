@@ -1,0 +1,174 @@
+1. Keras takes only numpy array as input
+
+
+
+
+
+----------------------
+	Steps involved
+----------------------
+
+1 . Import data and hold it in appropriate container
+
+2. Diving into training and test data(maybe validation data as well)
+
+3. Preprocessing
+
+	- Scaling 
+
+	- Data Augmentation 
+
+4. Building model layer by layer
+
+5. Checking accuracy with test data
+
+6. Fine Tuning the model (XGBoost)
+
+7. Saving the model   (and then loading)
+
+8. Deploy it with django/flask
+
+
+
+
+
+
+
+
+
+----------------------
+	Steps Explained
+----------------------
+
+1. Importing data / handling data (table/text/image/video/voice)
+
+	- Tables
+
+	- Text
+
+	- Images
+
+	import os                       # for path to dataset
+	import cv2                      # for converting image to pixel matrix
+
+	Data_directory = "C:\Tutorial\Machine-Learning\Datasets\Image_data"
+	Categories = ["Bike","Car","Horse"]
+
+	training_data = []
+
+
+	for category in Categories:
+		path = os.path.join(Data_directory,category)
+		class_num = Categories.index(category)							# for labels
+		for image in os.listdir(path):                                  # list of images in subfolder
+			img_path = os.path.join(path,image)                         # path of an image
+			img_array = cv2.imread(img_path)            			    # pixel array of an image
+			new_array = cv2.resize(img_array,(100,100),cv2.IMREAD_GRAYSCALE)
+			training_data.append([new_array,class_num])                  
+
+    import random
+    random.shuffle(training_data)                        # Shuppling data randomly
+
+    training_image = []
+    training_label = []
+
+    for image,label in training_data:                           # Seperating image and label
+    	training_images.append(image)
+    	training_labels.append(label)
+
+
+    numpy_training_images = np.array(training_images).reshape(-1,IMG_SIZE,IMG_SIZE,1)   
+
+    # For feeding into keras model we have to convert list to numpy array 
+
+
+
+
+
+
+2. Diving into training and test data(maybe validation data as well)
+
+
+3. Preprocessing
+
+	- Scaling - To change data value to a value between 0 and 1
+
+	from sklearn.preprocessing import MinMaxScaler
+
+	scaler = MinMaxScaler(feature_range=(0,1))
+	scaled_data = scaler.fit_transform((data).reshape(-1,1))
+
+	
+	- resizing image
+
+	img_size = 100
+
+	new_array = cv2.resize(img_array,(img_size,img_size))
+
+	- Data Augmentation
+
+		Rotating the image
+		Zooming the image
+		Varying colour of image
+		Cropping the image
+
+		gen = ImageDataGenerator(rotation_range =10,otheres)
+
+
+4. Building model layer by layer
+
+	model = Sequential()
+	model.add(Dense(16,activation='relu',input_shape=(728,)))    # input layer
+	model.add(Dense(32,activation='relu'))
+	model.add(Dense(10,activation='softmax'))                   # output layer
+
+	model.compile(Adam(lr=.0001),loss='sparse_categorical_crossentropy',metrics=['accuracy'])
+
+	model.fit(scaled_train_data,train_labels,validation_split=0.1,batch_size=10,epochs=20,shuffle=True)                      # option of adding validation with training only
+
+
+5. Fine Tuning (XGBoost)
+
+6. Checking accuracy with test data
+
+	predictions = model.predict(scaled_test_data,batch_size=10)
+
+	for i predictions :                #it will print the probablity of each label
+		print (i)
+
+	
+	rounded_predictions = model.predict_class(scaled_test_data,batch_size=10)
+
+	for i in rounded_predictions :		# It will print the predicted label
+		print (i)
+
+     # for accuracy we have to use sklearn 
+
+     from sklearn.metrics import confusion_matrix
+
+     cm = confusion_matrix(test_labels,rounded_predictions)
+
+
+
+7. Saving the model   (and then loading)
+
+	model.save('~path\random_model.h5')
+
+	from keras.models import load_model
+	new_model = load_model('~path\random_model.h5')
+
+	- to json
+
+	- saving weights
+
+
+
+
+
+
+
+------------------------
+	Theory explained
+------------------------
+
+1. Layers :

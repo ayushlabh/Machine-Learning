@@ -1,0 +1,11 @@
+1. Problem Statement and analysis :
+
+	Statement : Predicting if a person survived the titanic accident based on given data .
+
+	Data : Tabular (891 x 12) and (418 x 11)
+
+	Problem : Binary classification
+
+
+2. Exploratory Data Analysis :
+

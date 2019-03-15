@@ -1,0 +1,14 @@
+1. Feature Preprocessing and Extraction
+
+2. Exploratory Data Analysis (EDA)
+
+3. Validation
+
+4. Data Leaks
+
+5. Metrics Optimisation
+
+6. Hyperparameter Optimisation
+
+7. Ensembles
+

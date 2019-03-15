@@ -1,0 +1,114 @@
+All Charts :
+
+	https://python-graph-gallery.com/
+
+  Seaborn :
+
+    http://seaborn.pydata.org/examples/
+
+
+
+-----------------
+   Information
+----------------
+
+
+1. Subplotting :
+
+
+2. Facet Grid :
+
+
+3. Pair Grid :
+
+
+
+
+1. value_counts() - for count of each type in a column
+
+ e.g.  df['sex'].value_counts()
+
+  out: Male       56
+  	   Female     45
+
+
+2. sort_index()  - for sorting indexed if it is no.
+
+  e.g. df['points'].value_counts()
+
+   out:  58           5
+         56			  8
+         53			  7
+         60 		  9
+
+  e.g. df['points'].value_counts().sort_index()
+
+    out: 53			  7
+    	 56			  8
+    	 58			  5
+    	 60           9
+
+
+3. sample(n)  - To get n random points if there are a lot of points
+
+  e.g. df.sample(100).plot.scatter(x='price', y='points')
+
+
+
+-----------------
+  1. Bar Graph
+-----------------
+
+	eg.  df['sex'].value_counts().plot.bar()                  \\ pandas inbuilt function
+
+
+
+-----------------
+  2. Line Graph
+-----------------
+
+   eg. df['points'].value_counts().sort_index().plot.line()
+
+
+
+------------------
+  3. Area Graph 
+------------------
+
+	eg. df['points'].value_counts().sort_index().plot.area()
+
+
+-----------------
+  4. Histogram
+-----------------
+
+    eg. df['price'].plot.hist()
+
+    eg. df[df['price'] < 200]['price'].plot.hist()
+
+
+
+--------------------
+  5. Scatter Plot
+--------------------
+
+	eg. df.plot.scatter(x='price', y='points')
+
+
+---------------
+  6. Hexplot
+---------------
+
+	eg. df.plot.hexbin(x='price', y='points',gridsize = 15)
+
+
+
+
+
+
+
+
+
+
+
+

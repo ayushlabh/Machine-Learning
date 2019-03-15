@@ -1,0 +1,16 @@
+Notes of octave tutorial :-
+	https://www.coursera.org/learn/machine-learning/resources/QQx8l
+
+
+1. Matrix
+
+	A = [1 2;3 4;5 6]    % 3x2 matrix
+
+2. Loading data file in octave
+
+	load featureX.dat      % name of the file that contains data
+
+3. who - command for list of all variables
+   whos - command for list of all variables with detail
+
+4. 
